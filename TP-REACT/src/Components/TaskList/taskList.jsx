@@ -13,6 +13,9 @@ export const TaskList = () => {
   const [tasks, setTasks] = useState([]); //hook "useState" para estado de tarea y agregarlas, es el array de tareas basicamenmte.
   //const [newTask, setNewTask] = useState(""); //hook de la nueva tarea.
 
+  
+  
+
   //Para el checkbox
   const handleToggle = (index) => {
     const updatedTasks = [...tasks]; /*crea una copia del array que ya tenia (tasks)*/
