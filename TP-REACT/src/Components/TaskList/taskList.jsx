@@ -45,13 +45,13 @@ export const TaskList = () => {
       </Grid>
       <div className="taskContainer">
         <List>
-          {tasks.map((task, index) => (
+          {tasks.map((taskName, id) => (
             /*Componente de Tarea(TaskItem)*/
             <TaskItem
-              key = {index} //la key es el indice de la tarea
-              task = {task} //la task es el valor en ese indice, en este caso una tarea.
-              onToggleComplete = {() => handleToggle(index)} //le pasamos a onToggleComplete la funcion handleToggle(la que se encarga de ver si esta completada o no).
-              onDeleteTask = {() => handleDeleteTask(index)} //le pasamos a onDeleteTask la funcion handleDeleteTask.
+              key = {id} //la key es el indice de la tarea
+              task = {taskName} //la task es el valor en ese indice, en este caso una tarea.
+              onToggleComplete = {() => handleToggle(id)} //le pasamos a onToggleComplete la funcion handleToggle(la que se encarga de ver si esta completada o no).
+              onDeleteTask = {() => handleDeleteTask(id)} //le pasamos a onDeleteTask la funcion handleDeleteTask.
             />
           ))}
         </List>
