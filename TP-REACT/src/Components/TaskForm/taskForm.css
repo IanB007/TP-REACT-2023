@@ -1,3 +1,10 @@
-.taskForm{
-    padding: 2px;
+.MuiList-root{
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
 }
+
+.MuiTextField-root{
+    margin-bottom: 16px !important;
+}
+

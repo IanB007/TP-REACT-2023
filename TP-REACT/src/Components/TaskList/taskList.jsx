@@ -40,7 +40,7 @@ export const TaskList = () => {
     <div>
       <Grid container spacing={2} alignItems="center">
         <Grid item xs={12}>
-          <h2>Listado de tareas</h2>
+          <h1>Listado de tareas</h1>
         </Grid>
         <Grid item xs={12}>
           <TaskForm onAddTask={handleAddTaskToList}/*TEXT FORM*/></TaskForm>
