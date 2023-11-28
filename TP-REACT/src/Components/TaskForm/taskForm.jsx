@@ -7,9 +7,9 @@ export const TaskForm = ({ onAddTask }) => {
   const [taskAdded, setTaskAdded] = useState(false);
 
   //efecto secundario al realizar agregado de tarea.
-  useEffect (() => {
-    if (taskAdded){
-      alert('Tarea agregada :)');
+  useEffect(() => {
+    if (taskAdded) {
+      alert("Tarea agregada :)");
       setTaskAdded(false);
     }
   }, [taskAdded]);

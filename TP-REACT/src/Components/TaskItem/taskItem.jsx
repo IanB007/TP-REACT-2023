@@ -8,6 +8,7 @@ export const TaskItem = ({ task, onToggleComplete, onDeleteTask }) => {
       <ListItemText
         primary={task.text}
         style={{
+          //Esto deberia cambiarse a task.completed && "line-through" debido a que none es su valor por defecto.
           textDecoration: task.completed ? "line-through" : "none",
         }}
       />
